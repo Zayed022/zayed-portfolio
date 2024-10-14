@@ -1,21 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 function Navbar() {
-  const [sticky,setSticky]=useState(false)
-  useEffect(()=>{
-    const handleScroll=()=>{
-      if(window.scrollY>0){
-        setSticky(true)
-      }
-      else{
-        setSticky(false);
-      }
-    }
-    window.addEventListener('scroll',handleScroll)
-    return()=>{
-      window.removeEventListener('scroll',handleScroll)
-    }
-  },[])
+  
     const navItems = (
         <>
           <li>
